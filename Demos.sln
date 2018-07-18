@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ref", "src\Ref\Ref.csproj", "{69413035-F517-464E-A34C-FAE96C44B466}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Span", "src\Span\Span.csproj", "{36DBD492-4314-4D50-A797-732B998532C6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrabBag", "src\GrabBag\GrabBag.csproj", "{1021F1DF-E1B4-42E0-B84A-7AD902D82E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrabBag", "src\GrabBag\GrabBag.csproj", "{1021F1DF-E1B4-42E0-B84A-7AD902D82E2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69413035-F517-464E-A34C-FAE96C44B466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69413035-F517-464E-A34C-FAE96C44B466}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69413035-F517-464E-A34C-FAE96C44B466}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69413035-F517-464E-A34C-FAE96C44B466}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36DBD492-4314-4D50-A797-732B998532C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36DBD492-4314-4D50-A797-732B998532C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36DBD492-4314-4D50-A797-732B998532C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36DBD492-4314-4D50-A797-732B998532C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1021F1DF-E1B4-42E0-B84A-7AD902D82E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1021F1DF-E1B4-42E0-B84A-7AD902D82E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1021F1DF-E1B4-42E0-B84A-7AD902D82E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
