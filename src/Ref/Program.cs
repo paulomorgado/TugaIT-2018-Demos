@@ -2,16 +2,17 @@
 
 static class Program
 {
-    static ref int OrMaybe(this ref int x, in int y)
+    static ref readonly int OrMaybe(this in int x, in int y)
     {
-        x++; //y--;
+        //x++; //y--;
         return ref x;
     }
 
     static void Main(string[] args)
     {
-        int a = 1, b = 1000;
-        ref int c = ref a.OrMaybe(b);
+        int a = 1, b = 10;
+        ref readonly int c = ref a.OrMaybe(b);
+        a = 1000;
 
         WriteLine($"a = {a}, b = {b}, c = {c}");
     }
