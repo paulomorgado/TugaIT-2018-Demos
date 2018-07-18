@@ -2,7 +2,7 @@
 
 static class Program
 {
-    static int OrMaybe(ref int x, ref int y)
+    static int OrMaybe(this ref int x, ref int y)
     {
         x++; y--;
         return x;
@@ -11,7 +11,7 @@ static class Program
     static void Main(string[] args)
     {
         int a = 1, b = 10;
-        int c = OrMaybe(ref a, ref b);
+        int c = a.OrMaybe(ref b);
 
         WriteLine($"a = {a}, b = {b}, c = {c}");
     }
