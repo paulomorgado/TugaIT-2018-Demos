@@ -14,6 +14,9 @@ static class Program
         ref readonly int c = ref a.OrMaybe(b);
         a = 1000;
 
+        int d = 0;
+        c = ref d;
+
         WriteLine($"a = {a}, b = {b}, c = {c}");
     }
 }
