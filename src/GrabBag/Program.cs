@@ -13,6 +13,8 @@ class Program
 
     static Task<int> SumOfSquaresAsync(int[] numbers)
     {
-        return Task.FromResult(numbers.Select(i => i * i).Sum());
+        return Task.Run(Compute);
+
+        int Compute() => numbers.Select(i => i * i).Sum();
     }
 }
