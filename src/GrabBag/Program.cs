@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
@@ -17,5 +18,22 @@ class Program
         return Task.Run(function: Compute, cancellationToken);
 
         int Compute() => numbers.Select(i => i * i).Sum();
+    }
+
+    unsafe void M<D,E,T>(D d, E e, T *p)
+        where D: Delegate
+        where E: Enum
+        where T: unmanaged
+    {
+    }
+
+    unsafe void M()
+    {
+        var i = 10;
+        var p = &i;
+        M<Action, StringComparison, int>(
+            delegate() { },
+            StringComparison.InvariantCultureIgnoreCase,
+            p);
     }
 }
